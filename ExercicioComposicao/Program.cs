@@ -54,7 +54,7 @@ namespace ExercicioComposicao
             Console.WriteLine("Departmant: " + worker.Department.name);
             Console.WriteLine("Icome for " + mounthAndYear + ":" 
                               + worker.Income(int.Parse(date[1]), 
-                                              int.Parse(date[0])));
+                                              int.Parse(date[0])).ToString("F2", CultureInfo.InvariantCulture));
 
         }
     }
