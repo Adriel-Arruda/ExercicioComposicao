@@ -6,10 +6,10 @@ namespace ExercicioComposicao.Entities
 {
     internal class Worker
     {
-        public string name { get; set; }
-        public WorkerLevel level { get; set; }
+        public string Name { get; set; }
+        public WorkerLevel Level { get; set; }
         public double BaseSalary { get; set; }
-        public Department department { get; set; }
+        public Department Department { get; set; }
 
         public List<HourContract> Contracts { get; set; } = new List<HourContract>();
 
@@ -19,10 +19,10 @@ namespace ExercicioComposicao.Entities
 
         public Worker(string name, WorkerLevel level, double baseSalary, Department department)
         {
-            this.name = name;
-            this.level = level;
+            Name = name;
+            Level = level;
             BaseSalary = baseSalary;
-            this.department = department;
+            Department = department;
         }
 
         public void AddContract(HourContract contract)
